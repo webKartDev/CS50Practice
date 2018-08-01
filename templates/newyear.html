@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Is it New Year</title>
+    <style>body{text-align: center;}</style>
+  </head>
+  <body>
+    {% if new_year %}
+      <h1>Yes! Happy New Year</h1><!-- This is the way of creating if else in Jinja 2-->
+    {% else %}
+      <h1>No!</h1>
+    {% endif %}
+    <a href = {{ url_for('index')}}>Main Page</a> <!-- linking webpage defined function 'index'-->
+  </body>
+</html>
